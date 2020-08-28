@@ -1,10 +1,11 @@
 import React from 'react'
 import Jumbotron from '../components/jumbotron'
+import Calendar from '../components/calendar'
 
 const Home = () => (
     <React.Fragment>
     <Jumbotron/>
-    <p>Welcome to my Home</p>
+    <Calendar/>
     </React.Fragment>
 )
 
