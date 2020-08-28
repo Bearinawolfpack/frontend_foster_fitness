@@ -1,5 +1,6 @@
 import React from "react";
 import { Jumbotron as Jumbo, Container } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
 import styled from "styled-components";
 import cfAmbience from "../assets/cf_ambience.jpg";
 
@@ -32,8 +33,13 @@ const Jumbotron = () => (
 	<Styles>
 		<Jumbo fluid className="jumbo">
 			<div className="overlay"></div>
-			<Container>
+			<Container id="center-jumbo-content">
 				<h1>Foster Fitness</h1>
+				<p>
+					This Place Shall Never Be With Those Cold And Timid Souls
+					Who Neither Know Victory Nor Defeat!
+				</p>
+				<Button variant="dark">Get Started</Button>
 			</Container>
 		</Jumbo>
 	</Styles>
