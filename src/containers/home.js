@@ -1,5 +1,4 @@
 import React from 'react'
-import './css_components/home.css'
 import Jumbotron from '../components/jumbotron'
 
 const Home = () => (
