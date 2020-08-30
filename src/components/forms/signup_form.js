@@ -18,9 +18,13 @@ class Signup extends React.Component {
 		this.setState({ [event.target.name]: event.target.value });
 	};
 
-	testSubmit = (event) => {
-		event.preventDefault();
-		console.log("SUBMIT IS WORKING");
+	resetSignup = () => {
+		this.setState({
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+        })
 	};
 
 	sendEmail = (event) => {
@@ -35,13 +39,13 @@ class Signup extends React.Component {
 			)
 			.then(
 				(result) => {
-					console.log(result.text);
+                    console.log(result.text);
+                    this.resetSignup()
 				},
 				(error) => {
 					console.log(error.text);
 				}
 			);
-		event.target.reset();
 	};
 
 	render() {
