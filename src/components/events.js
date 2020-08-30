@@ -11,13 +11,12 @@ class Events extends React.Component {
     }
 
     render() {
-        // console.log(this.state.stateEvents)
         let events = this.state.stateEvents.map(event => <EventCard event={event} key={event.id}/>)
         console.log(events)
         return(
-            <div>
+            <React.Fragment>
                 {events}
-            </div>
+            </React.Fragment>
 
         )
     }

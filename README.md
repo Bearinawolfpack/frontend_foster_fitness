@@ -15,13 +15,13 @@ NOTES:
 
   - NPM Package for React IFrames: https://www.npmjs.com/package/react-iframe
 
+- Link/ NavLink/ state: { isAdmin:true }: https://www.codementor.io/@packt/using-the-link-and-navlink-components-to-navigate-to-a-route-rieqipp42
 
-Sample Signup POST:
+- Dynamic Routes: https://www.youtube.com/watch?v=Law7wfdg_ls  (22:10)
 
-Corey Lynch
 
-f00forcacawfee@gmail.com
-
-1(234)567-8910
-
-I really interested in trying out the gym but I'll only be able to make it on the weekend. Do you guys have a 'weekend warrior' type of membership? I saw the punchcard has 8 classes, I'm ok with that but i'd rather have a monthly that I could set and forget.
+- Sample Signup POST:
+  - Corey Lynch
+  - f00forcacawfee@gmail.com
+  - 1(234)567-8910
+  - I really interested in trying out the gym but I'll only be able to make it on the weekend. Do you guys have a 'weekend warrior' type of membership? I saw the punchcard has 8 classes, I'm ok with that but i'd rather have a monthly that I could set and forget.

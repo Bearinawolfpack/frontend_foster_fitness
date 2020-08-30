@@ -19,8 +19,8 @@ class Footer extends React.Component {
                         <Map />
                     </div>
                     <div>
-                        <span>Contact Us - <GymContact/></span>
-                        <span>Contact Us Form Goes Here - <Signup/></span>
+                        <span><GymContact/></span>
+                        <span><Signup/></span>
                     </div>
                 </div>
 			</Styles>

@@ -6,11 +6,11 @@ import Footer from "./containers/footer";
 import Home from "./containers/home";
 import Pricing from "./containers/pricing";
 import Contact from "./containers/contact";
-import Coach from "./containers/coach";
+import  Coach from "./containers/coach";
+import ShowCoach from "./components/cards/coach_show"
 import Workout from "./containers/workout";
 import Schedule from "./containers/schedule";
 import NoMatch from "./components/noMatch";
-import Layout from "./components/layout";
 import Login from "./containers/login"
 
 class App extends React.Component {
@@ -18,7 +18,6 @@ class App extends React.Component {
 		return (
 			<React.Fragment>
         <NavigationBar />
-				{/* <Layout> */}
             <Router>
               <Switch>
                 <Route exact path="/" component={Home} />¸
@@ -26,13 +25,13 @@ class App extends React.Component {
                 <Route path="/schedule" component={Schedule} />¸
                 <Route path="/contact" component={Contact} />¸
                 <Route path="/workout" component={Workout} />¸
-                <Route path="/coach" component={Coach} />¸
+                <Route path="/coach" exact component={Coach} />¸
+                <Route path="/coach/:id" component={ShowCoach} />¸
                 <Route path="/login" component={Login} />¸
                 <Route component={NoMatch} />
               </Switch>
             </Router>
 					<Footer />
-				{/* </Layout> */}
 			</React.Fragment>
 		);
 	}
