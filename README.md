@@ -15,3 +15,13 @@ NOTES:
 
   - NPM Package for React IFrames: https://www.npmjs.com/package/react-iframe
 
+
+Sample Signup POST:
+
+Corey Lynch
+
+f00forcacawfee@gmail.com
+
+1(234)567-8910
+
+I really interested in trying out the gym but I'll only be able to make it on the weekend. Do you guys have a 'weekend warrior' type of membership? I saw the punchcard has 8 classes, I'm ok with that but i'd rather have a monthly that I could set and forget.
