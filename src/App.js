@@ -12,6 +12,7 @@ import Workout from "./containers/workout";
 import Schedule from "./containers/schedule";
 import NoMatch from "./components/noMatch";
 import Login from "./containers/login"
+import Admin from "./containers/admin"
 
 class App extends React.Component {
 	render() {
@@ -28,6 +29,7 @@ class App extends React.Component {
                 <Route path="/coach" exact component={Coach} />¸
                 <Route path="/coach/:id" component={ShowCoach} />¸
                 <Route path="/login" component={Login} />¸
+                <Route path="/admin" component={Admin} />,
                 <Route component={NoMatch} />
               </Switch>
             </Router>
