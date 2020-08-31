@@ -3,6 +3,7 @@ import Jumbotron from '../components/jumbotron'
 import Calendar from '../components/calendar'
 import CoachCard from '../components/cards/coach_card'
 import Layout from "../components/layout";
+import Workout from "./workout"
 
 class Home extends React.Component{
     state = { classCoaches: [] }
@@ -26,6 +27,8 @@ class Home extends React.Component{
                 </Layout>
                 {headCoach[0]}
             </div>
+            <Workout />
+            
             
             </React.Fragment>
         )
