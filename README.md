@@ -19,6 +19,8 @@ NOTES:
 
 - Dynamic Routes: https://www.youtube.com/watch?v=Law7wfdg_ls  (22:10)
 
+- Remove a branch: https://www.educative.io/edpresso/how-to-delete-remote-branches-in-git
+
 
 - Sample Signup POST:
   - Corey Lynch
