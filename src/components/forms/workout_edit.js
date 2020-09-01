@@ -17,11 +17,6 @@ class WorkoutEdit extends React.Component {
 
 	submitHandler = (event) => {
 		event.preventDefault();
-        // console.log(event)
-        console.log(this.state.name)
-        console.log(this.state.date)
-        console.log(this.state.wod)
-        console.log(this.state.description)
 
 		fetch("http://localhost:3000/workouts/8", {
 			method: "PATCH",
@@ -36,8 +31,16 @@ class WorkoutEdit extends React.Component {
 				"description": this.state.description
 			}),
 		})
-			.then((resp) => resp.json())
-			.then((workout) => console.log(workout));
+			.then(this.resetSignup)
+    };
+    
+    resetSignup = () => {
+		this.setState({
+			name: "",
+			date: "",
+			wod: "",
+			description: "",
+		});
 	};
 
 	render() {
@@ -66,7 +69,7 @@ class WorkoutEdit extends React.Component {
 							type="text"
 							name="wod"
 							placeholder="Enter Workout"
-							value={this.state.workout}
+							value={this.state.wod}
 							onChange={this.changeHandler}
 						/>
 						<br />
