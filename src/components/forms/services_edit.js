@@ -7,7 +7,7 @@ class ServicesEdit extends React.Component {
     state = {
         name: "",
         description: "",
-		price: "",
+		price: 0,
 	};
 
 	changeHandler = (event) => {
@@ -18,7 +18,7 @@ class ServicesEdit extends React.Component {
 		event.preventDefault();
 
 		fetch("http://localhost:3000/services", {
-			method: "PATCH",
+			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
 				"Accept": "application/json",
@@ -26,23 +26,28 @@ class ServicesEdit extends React.Component {
 			body: JSON.stringify({
                 "name": this.state.name,
                 "description": this.state.description,
-				"price": this.state.price,
+                "price": this.state.price,
+                "admin_id": 8
 			}),
-		})
+        })
+            .then(console.log)
 			.then(this.resetSignup)
     };
     
     resetSignup = () => {
-		this.setState({
+        this.setState({
 			name: "",
 			description: "",
-			price: "",
+			price: 0,
 		});
 	};
 
 	render() {
+        
 		return (
 			<Layout>
+
+                <h1>Current Services Go Here</h1>
 				<Form onSubmit={this.submitHandler}>
 					<Form.Group role="form">
 						<Form.Label>Services Edit Form:</Form.Label>
@@ -72,7 +77,7 @@ class ServicesEdit extends React.Component {
 						/>
 						<br />
 						<Button variant="primary" type="submit">
-							Submit
+							Add Service
 						</Button>
 					</Form.Group>
 				</Form>

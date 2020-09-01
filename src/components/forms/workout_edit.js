@@ -82,7 +82,7 @@ class WorkoutEdit extends React.Component {
 						/>
 						<br />
 						<Button variant="primary" type="submit">
-							Submit
+							Change WoD
 						</Button>
 					</Form.Group>
 				</Form>
