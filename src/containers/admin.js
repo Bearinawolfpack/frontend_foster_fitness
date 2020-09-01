@@ -4,7 +4,7 @@ class Admin extends React.Component {
     render(){
         return(
             <React.Fragment>
-                <h1> You Have Made it the the Admin Page </h1>
+                <h1> Admin Dashboard </h1>
             </React.Fragment>
         )
     }

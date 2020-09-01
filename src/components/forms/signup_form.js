@@ -23,29 +23,24 @@ class Signup extends React.Component {
 			phone: "",
 			message: "",
 		});
-    };
-    
-    addUser = () => {
-        fetch("http://localhost:3000/users", {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: JSON.stringify({
-                // 'name': 'Corey Lynch',
-                // 'email': 'f00forcacawfee@gmail.com',
-                // 'phone': '1(234)567-8910',
-                // 'message': 'bloop'
-                'name': this.state.name,
-                'email': this.state.email,
-                'phone': this.state.phone,
-                'message': this.state.message,
-                'admin_id': 5
-            })
-        })
-        .then(console.log)
-    }
+	};
+
+	addUser = () => {
+		fetch("http://localhost:3000/users", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+				Accept: "application/json",
+			},
+			body: JSON.stringify({
+				name: this.state.name,
+				email: this.state.email,
+				phone: this.state.phone,
+				message: this.state.message,
+				admin_id: 5,
+			}),
+		}).then(console.log);
+	};
 
 	sendEmail = (event) => {
 		event.preventDefault();
@@ -59,8 +54,8 @@ class Signup extends React.Component {
 			)
 			.then(
 				(result) => {
-                    console.log(result.text);
-                    this.addUser()
+					console.log(result.text);
+					this.addUser();
 					this.resetSignup();
 				},
 				(error) => {
