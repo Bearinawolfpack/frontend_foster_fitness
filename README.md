@@ -21,6 +21,10 @@ NOTES:
 
 - Remove a branch: https://www.educative.io/edpresso/how-to-delete-remote-branches-in-git
 
+- Hiding API Keys: https://medium.com/better-programming/how-to-hide-your-api-keys-c2b952bc07e6
+
+-  
+
 
 - Sample Signup POST:
   - Corey Lynch
