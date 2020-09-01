@@ -4,23 +4,41 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 class WorkoutEdit extends React.Component {
-    state={
-        name: "",
-        date: "",
-        workout: "",
-        description: ""
-    }
+	state = {
+		name: "",
+		date: "",
+		wod: "",
+		description: "",
+	};
 
-    changeHandler = (event) => {
-        this.setState(
-            { [event.target.name]: event.target.value }
-        )
-    }
+	changeHandler = (event) => {
+		this.setState({ [event.target.name]: event.target.value });
+	};
 
-    submitHandler = (event) => {
-        event.preventDefault()
+	submitHandler = (event) => {
+		event.preventDefault();
         // console.log(event)
-    }
+        console.log(this.state.name)
+        console.log(this.state.date)
+        console.log(this.state.wod)
+        console.log(this.state.description)
+
+		fetch("http://localhost:3000/workouts/8", {
+			method: "PATCH",
+			headers: {
+				"Content-Type": "application/json",
+				"Accept": "application/json",
+			},
+			body: JSON.stringify({
+				"name": this.state.name,
+				"date": this.state.date,
+				"wod": this.state.wod,
+				"description": this.state.description
+			}),
+		})
+			.then((resp) => resp.json())
+			.then((workout) => console.log(workout));
+	};
 
 	render() {
 		return (
@@ -28,14 +46,14 @@ class WorkoutEdit extends React.Component {
 				<Form onSubmit={this.submitHandler}>
 					<Form.Group role="form">
 						<Form.Label>Workout Edit Form:</Form.Label>
-                        <Form.Control
+						<Form.Control
 							type="text"
 							name="date"
 							placeholder="Enter the date this workout is for..."
 							value={this.state.date}
 							onChange={this.changeHandler}
 						/>
-                        <br />
+						<br />
 						<Form.Control
 							type="text"
 							name="name"
@@ -46,7 +64,7 @@ class WorkoutEdit extends React.Component {
 						<br />
 						<Form.Control
 							type="text"
-							name="workout"
+							name="wod"
 							placeholder="Enter Workout"
 							value={this.state.workout}
 							onChange={this.changeHandler}

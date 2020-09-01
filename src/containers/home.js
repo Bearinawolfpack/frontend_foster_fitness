@@ -21,15 +21,20 @@ class Home extends React.Component{
         return(
             <React.Fragment>
             <Jumbotron/>
-            <Calendar/>
+            <br/>
             <div>
                 <Layout>
                     <h3>Meet Our Head Coach:</h3>
                 </Layout>
                 {headCoach[0]}
             </div>
+            <br/>
             <Workout />
+            <br/>
+            <Calendar/>
+            <br/>
             <Pricing />
+            <br/>
             </React.Fragment>
         )
     }
