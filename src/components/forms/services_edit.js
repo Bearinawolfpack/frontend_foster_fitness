@@ -11,13 +11,11 @@ class ServicesEdit extends React.Component {
         price: 0,
         stateServices: []
     };
-    
-    state = { stateService: [] }
 
     componentDidMount(){
         fetch('http://localhost:3000/services')
         .then(resp => resp.json())
-        .then(services => this.setState({stateService: services}))
+        .then(services => this.setState({stateServices: services}))
     }
 
 	changeHandler = (event) => {
@@ -33,13 +31,18 @@ class ServicesEdit extends React.Component {
     }
 
     deleteHandler = (id) => {
-        fetch("http://localhost:3000/services/" + String(id), {
-        method: "DELETE"
-        })
+        let newStateServices = this.state.stateServices.filter(service => service.id !== id)
+        fetch("http://localhost:3000/services/" + String(id), {method: "DELETE"})
+        .then(this.setState({ stateServices: newStateServices }))
     }
 
     editHandler = (id) => {
-        console.log(id)
+        let service = this.state.stateServices.find(service => service.id === id)
+        this.setState({
+            name: service.name,
+            description: service.description,
+            price: service.price 
+        })
     }
 
 	submitHandler = (event) => {
@@ -58,8 +61,9 @@ class ServicesEdit extends React.Component {
                 "admin_id": 8
 			}),
         })
-            .then(console.log)
-			.then(this.resetSignup)
+        .then(this.resetSignup)
+        .then(() => this.componentDidMount())
+		
     };
     
     resetSignup = () => {
@@ -68,10 +72,10 @@ class ServicesEdit extends React.Component {
 			description: "",
 			price: 0,
 		});
-	};
+    };
 
 	render() {
-        let gymServices = this.state.stateService.map(service => <AdminServicesCard service={service} key={service.id} clickHandler={this.clickHandler}/>)
+        let gymServices = this.state.stateServices.map(service => <AdminServicesCard service={service} key={service.id} clickHandler={this.clickHandler}/>)
 		return (
 			<Layout>
 
