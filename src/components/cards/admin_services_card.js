@@ -8,7 +8,7 @@ const AdminServicesCard = (props) => {
     }
 	return (
 		<React.Fragment>
-			<h5>${props.service.price}/mo.</h5>
+			<h5>{props.service.price}</h5>
 			<h6>{props.service.name}</h6>
 			<p>{props.service.description}</p>
 			<Button variant="danger" size="sm" onClick={ () => clickListener(props.service.id, "Delete") }>

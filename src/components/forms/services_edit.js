@@ -8,7 +8,7 @@ class ServicesEdit extends React.Component {
 	state = {
 		name: "",
 		description: "",
-		price: "$0/mo.",
+		price: "",
 		stateServices: [],
 	};
 
@@ -112,7 +112,7 @@ class ServicesEdit extends React.Component {
 						<Form.Control
 							type="text"
 							name="price"
-							placeholder="Price of Service"
+							placeholder="$0/mo."
 							value={this.state.price}
 							onChange={this.changeHandler}
 						/>
