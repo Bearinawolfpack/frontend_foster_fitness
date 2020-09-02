@@ -34,7 +34,7 @@ class CoachesEdit extends React.Component {
 		let newStateCoaches = this.state.stateCoaches.filter(
 			(coach) => coach.id !== id
 		);
-		fetch("http://localhost:3000/Coaches/" + String(id), {
+		fetch("http://localhost:3000/coaches/" + String(id), {
 			method: "DELETE",
 		}).then(this.setState({ stateCoaches: newStateCoaches }));
 	};
