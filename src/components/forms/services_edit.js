@@ -2,17 +2,45 @@ import React from "react";
 import Layout from "../layout";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import AdminServicesCard from '../cards/admin_services_card'
 
 class ServicesEdit extends React.Component {
     state = {
         name: "",
         description: "",
-		price: 0,
-	};
+        price: 0,
+        stateServices: []
+    };
+    
+    state = { stateService: [] }
+
+    componentDidMount(){
+        fetch('http://localhost:3000/services')
+        .then(resp => resp.json())
+        .then(services => this.setState({stateService: services}))
+    }
 
 	changeHandler = (event) => {
 		this.setState({ [event.target.name]: event.target.value });
-	};
+    };
+    
+    clickHandler = (id, str) => {
+        if(str === "Delete"){
+            this.deleteHandler(id)
+        } else if (str === "Edit"){
+            this.editHandler(id)
+        }
+    }
+
+    deleteHandler = (id) => {
+        fetch("http://localhost:3000/services/" + String(id), {
+        method: "DELETE"
+        })
+    }
+
+    editHandler = (id) => {
+        console.log(id)
+    }
 
 	submitHandler = (event) => {
 		event.preventDefault();
@@ -43,11 +71,12 @@ class ServicesEdit extends React.Component {
 	};
 
 	render() {
-        
+        let gymServices = this.state.stateService.map(service => <AdminServicesCard service={service} key={service.id} clickHandler={this.clickHandler}/>)
 		return (
 			<Layout>
 
                 <h1>Current Services Go Here</h1>
+                {gymServices}
 				<Form onSubmit={this.submitHandler}>
 					<Form.Group role="form">
 						<Form.Label>Services Edit Form:</Form.Label>
