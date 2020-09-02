@@ -7,7 +7,7 @@ import AdminServicesCard from "../cards/admin_services_card";
 class ServicesEdit extends React.Component {
 	state = {
 		name: "",
-		description: "",
+		bio: "",
 		price: "",
 		stateServices: [],
 	};
@@ -74,7 +74,7 @@ class ServicesEdit extends React.Component {
 		this.setState({
 			name: "",
 			description: "",
-			price: 0,
+			price: "",
 		});
 	};
 
