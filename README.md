@@ -37,3 +37,11 @@ NOTES:
 - Randy
 - 75x Snatches (75/55)
 - Go Fast and Don't Let Go!
+
+
+=================================
+FUTURE PATCHES:
+=================================
+- When a user is added from the admin screen, you shouldn't have to refresh for that user to then appear on the users list.
+
+- Add Captcha to sign_up form

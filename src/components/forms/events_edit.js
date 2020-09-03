@@ -2,20 +2,21 @@ import React from "react";
 import Layout from "../layout";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import AdminCoachesCard from "../cards/admin_coaches_card";
+import AdminEventCard from "../cards/admin_event_card";
 
-class CoachesEdit extends React.Component {
+class EventsEdit extends React.Component {
 	state = {
 		name: "",
-		bio: "",
+		description: "",
 		picture: "",
-		stateCoaches: [],
+		url: "",
+		stateEvents: [],
 	};
 
 	componentDidMount() {
-		fetch("http://localhost:3000/coaches")
+		fetch("http://localhost:3000/events")
 			.then((resp) => resp.json())
-			.then((coaches) => this.setState({ stateCoaches: coaches }));
+			.then((events) => this.setState({ stateEvents: events }));
 	}
 
 	changeHandler = (event) => {
@@ -31,29 +32,29 @@ class CoachesEdit extends React.Component {
 	};
 
 	deleteHandler = (id) => {
-		let newStateCoaches = this.state.stateCoaches.filter(
-			(coach) => coach.id !== id
+		let newStateEvents = this.state.stateEvents.filter(
+			(event) => event.id !== id
 		);
-		fetch("http://localhost:3000/coaches/" + String(id), {
+		fetch("http://localhost:3000/events/" + String(id), {
 			method: "DELETE",
-		}).then(this.setState({ stateCoaches: newStateCoaches }));
+		}).then(this.setState({ stateEvents: newStateEvents }));
 	};
 
 	editHandler = (id) => {
-		let coach = this.state.stateCoaches.find(
-			(coach) => coach.id === id
+		let event = this.state.stateEvents.find(
+			(event) => event.id === id
 		);
 		this.setState({
-			name: coach.name,
-			bio: coach.bio,
-			picture: coach.picture,
+			name: event.name,
+			description: event.description,
+			picture: event.picture,
 		});
 	};
 
 	submitHandler = (event) => {
 		event.preventDefault();
 
-		fetch("http://localhost:3000/coaches", {
+		fetch("http://localhost:3000/events", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
@@ -61,7 +62,7 @@ class CoachesEdit extends React.Component {
 			},
 			body: JSON.stringify({
 				name: this.state.name,
-				bio: this.state.bio,
+				description: this.state.description,
 				picture: this.state.picture,
 				admin_id: 8,
 			}),
@@ -73,27 +74,27 @@ class CoachesEdit extends React.Component {
 	resetSignup = () => {
 		this.setState({
 			name: "",
-			bio: "",
+			description: "",
 			picture: "",
+			url: "",
 		});
 	};
 
 	render() {
-		console.log(this.state.stateCoaches)
-		let gymCoaches = this.state.stateCoaches.map((coach) => (
-			<AdminCoachesCard
-				coach={coach}
-				key={coach.id}
+		let gymEvents = this.state.stateEvents.map((event) => (
+			<AdminEventCard
+				event={event}
+				key={event.id}
 				clickHandler={this.clickHandler}
 			/>
 		));
 		return (
 			<Layout>
-				<h1>Current Coaches</h1>
-				{gymCoaches}
+				<h1>Current Events</h1>
+				{gymEvents}
 				<Form onSubmit={this.submitHandler}>
 					<Form.Group role="form">
-						<Form.Label>Coaches Edit Form:</Form.Label>
+						<Form.Label>Events Edit Form:</Form.Label>
 						<Form.Control
 							type="text"
 							name="name"
@@ -104,9 +105,9 @@ class CoachesEdit extends React.Component {
 						<br />
 						<Form.Control
 							type="text"
-							name="bio"
+							name="description"
 							placeholder="About"
-							value={this.state.bio}
+							value={this.state.description}
 							onChange={this.changeHandler}
 						/>
 						<br />
@@ -119,7 +120,7 @@ class CoachesEdit extends React.Component {
 						/>
 						<br />
 						<Button variant="primary" type="submit">
-							Add coach
+							Add event
 						</Button>
 					</Form.Group>
 				</Form>
@@ -128,4 +129,4 @@ class CoachesEdit extends React.Component {
 	}
 }
 
-export default CoachesEdit;
+export default EventsEdit;
