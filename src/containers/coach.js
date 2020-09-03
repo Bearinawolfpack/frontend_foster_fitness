@@ -1,5 +1,6 @@
 import React from 'react'
 import CoachCard from '../components/cards/coach_card'
+import { Row, Container } from 'react-bootstrap'
 
 class Coach extends React.Component{
     state = { stateCoaches:[] }
@@ -14,9 +15,11 @@ class Coach extends React.Component{
         let coaches = this.state.stateCoaches.map(coach => <CoachCard coach={coach} key={coach.id}/>)
         
         return(
-            <React.Fragment>
-                {coaches}
-            </React.Fragment>
+            <Container>
+                <Row xs={1} md={2} lg={3} >
+                    {coaches}
+                </Row>
+            </Container>
         )
     }
 }
