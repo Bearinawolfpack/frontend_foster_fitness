@@ -1,10 +1,11 @@
 import React from 'react'
+import Layout from './layout'
 import { BiMap } from 'react-icons/bi';
 import { ImPhone } from 'react-icons/im';
 import { AiOutlineMail } from 'react-icons/ai'
 
 const gymContact = () => (
-    <React.Fragment>
+    <Layout>
         <h3>Ready?</h3>
         <p>Talk to us in person, on the Phone, or via Email!</p>
         
@@ -19,7 +20,7 @@ const gymContact = () => (
         
         <p>Still have questions?</p>
         <p>Fill out the form and we'll get back to your within 24hr.</p>
-    </React.Fragment>
+    </Layout>
 )
 
 export default gymContact

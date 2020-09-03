@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../layout";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { Redirect, Route } from "react-router-dom"
+import { Redirect } from "react-router-dom"
 
 class LoginForm extends React.Component {
 	state = {
@@ -32,8 +32,6 @@ class LoginForm extends React.Component {
             this.setState(
 				{ loggedIn: true }
 			)
-            console.log("Will redirect you to admin page momentarily", this.state.loggedIn);
-			this.resetSignup();
 		} else {
 			alert("Please Try Again");
 			this.resetSignup();
