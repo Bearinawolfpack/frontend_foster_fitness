@@ -11,8 +11,6 @@ class ShowCoach extends React.Component {
 	}
 
 	render() {
-		// console.log(this.props.match.params.id)
-		// console.log(this.state.stateCoach)
 		return (
 			<Layout>
 				<h3>{this.state.stateCoach.name}</h3>

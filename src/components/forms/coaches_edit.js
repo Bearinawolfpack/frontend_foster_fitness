@@ -79,7 +79,6 @@ class CoachesEdit extends React.Component {
 	};
 
 	render() {
-		console.log(this.state.stateCoaches)
 		let gymCoaches = this.state.stateCoaches.map((coach) => (
 			<AdminCoachesCard
 				coach={coach}

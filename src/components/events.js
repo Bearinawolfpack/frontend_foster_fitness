@@ -12,7 +12,6 @@ class Events extends React.Component {
 
     render() {
         let events = this.state.stateEvents.map(event => <EventCard event={event} key={event.id}/>)
-        console.log(events)
         return(
             <React.Fragment>
                 {events}

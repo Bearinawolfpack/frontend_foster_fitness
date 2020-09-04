@@ -1,5 +1,5 @@
 import React from 'react'
-import WorkoutCard from '../components/cards/workout_card'
+import WorkoutJumbotron from '../components/cards/workout_card'
 
 class Workout extends React.Component{
     state = { stateWorkout: [] }
@@ -11,8 +11,7 @@ class Workout extends React.Component{
     }
 
     render(){
-        // console.log(this.state.stateWorkout)
-        let currentWorkout = this.state.stateWorkout.map(wod => <WorkoutCard wod={wod} key={wod.id} />)
+        let currentWorkout = this.state.stateWorkout.map(wod => <WorkoutJumbotron wod={wod} key={wod.id} />)
         return(
             <div>
                 {currentWorkout}

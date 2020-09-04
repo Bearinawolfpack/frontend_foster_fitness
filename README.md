@@ -52,6 +52,8 @@ FUTURE PATCHES:
 
 - 'Learn More' button on homepage jumbotron should scrollIntoView() the signup form in the footer.
 
+- "See More" Hyperlink, after the third coach, which links to the 'about us' page.
+
 
 
 
