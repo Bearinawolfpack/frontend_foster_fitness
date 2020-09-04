@@ -25,6 +25,8 @@ NOTES:
 
 -  Redirect: https://www.youtube.com/watch?v=PHMzwisL_Ss (6:15)
 
+- CSS Background: https://css-tricks.com/almanac/properties/b/background-attachment/
+
 
 - Sample Signup POST:
   - Corey Lynch
@@ -46,8 +48,9 @@ FUTURE PATCHES:
 
 - Add Captcha to sign_up form
 
+- Transparent overlays for background images (look more into react styled components)
 
-
+- 'Learn More' button on homepage jumbotron should scrollIntoView() the signup form in the footer.
 
 
 
@@ -64,3 +67,7 @@ FUTURE PATCHES:
     <Button variant="primary">Go somewhere</Button>
   </Card.Body>
 </Card> -->
+
+
+
+

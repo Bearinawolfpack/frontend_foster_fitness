@@ -13,7 +13,6 @@ const CoachCard = (props) => (
 						width="300"
 						height="300"
 					/>
-
 					<Card.Body>
 						<Card.Title>{props.coach.name}</Card.Title>
 						<Card.Text>{props.coach.bio}</Card.Text>

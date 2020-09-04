@@ -39,7 +39,7 @@ const Jumbotron = () => (
 					This Place Shall Never Be With Those Cold And Timid Souls
 					Who Neither Know Victory Nor Defeat!
 				</p>
-				<Button variant="dark">Get Started</Button>
+				<Button variant="dark" >Get Started</Button>
 			</Container>
 		</Jumbo>
 	</Styles>
