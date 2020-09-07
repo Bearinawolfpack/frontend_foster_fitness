@@ -11,6 +11,7 @@ const Styles = styled.div`
 		height: 30rem;
 		position: relative;
 		z-index: -2;
+		margin-bottom: 0px;
 	}
 
 	.overlay {
@@ -32,7 +33,7 @@ const Styles = styled.div`
 const WorkoutJumbotron = (props) => (
 	<Styles>
 		<Jumbo fluid className="jumbo">
-			<div className="overlay"></div>
+			<div className="overlay" ></div>
 			<Container id="center-jumbo-content">
 				<h3>Today is {props.wod.date} and the Workout for today is:</h3>
 				<h1>"{props.wod.name}"</h1>
