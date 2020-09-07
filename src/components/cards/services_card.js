@@ -8,7 +8,7 @@ const ServicesCard = (props) => (
 			bg="transparent"
 			style={{ width: "18rem", border: "0px solid rgba(0,0,0,.125)" }}
 		>
-			<Card.Body>
+			<Card.Body style={{backgroundColor: "rgba(0,0,0,.5)"}}>
 				<Card.Title as="h1" style={{ color: "#fcba03" }}>
 					{props.service.price}
 				</Card.Title>

@@ -2,10 +2,10 @@ import React from "react";
 import CoachCard from "../components/cards/coach_card";
 import { Row, Container } from "react-bootstrap";
 import styled from "styled-components";
-import ring_pano_bw from "../assets/ring_pano_bw.jpeg";
+import ring_pano_bw2 from "../assets/ring_pano_bw2.jpeg";
 
 const Wrapper = styled.div`
-    background-image: url(${ring_pano_bw});
+    background-image: url(${ring_pano_bw2});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

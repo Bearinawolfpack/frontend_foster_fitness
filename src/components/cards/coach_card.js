@@ -14,7 +14,7 @@ const CoachCard = (props) => (
 						width="300"
 						height="300"
 					/>
-					<Card.Body>
+					<Card.Body style={{backgroundColor: "rgba(0,0,0,.5)"}}>
 						<Card.Title style={{ color: "#fcba03" }}>{props.coach.name}</Card.Title>
 						<Card.Text style={{ color: "#fcba03" }}>{props.coach.bio}</Card.Text>
 
