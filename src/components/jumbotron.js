@@ -2,7 +2,7 @@ import React from "react";
 import { Jumbotron as Jumbo, Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import styled from "styled-components";
-import cfAmbience from "../assets/cf_ambience.jpg";
+import cfAmbience from "../assets/cf_ambience.jpeg";
 
 const Styles = styled.div`
 	.jumbo {
@@ -12,6 +12,7 @@ const Styles = styled.div`
 		height: 200px;
 		position: relative;
 		z-index: -2;
+		margin-bottom: 0px;
 	}
 
 	.overlay {

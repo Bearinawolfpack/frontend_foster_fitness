@@ -1,11 +1,11 @@
 import React from "react";
 import { Jumbotron as Jumbo, Container } from "react-bootstrap";
 import styled from "styled-components";
-import corey_standing_bw from "../../assets/corey_standing_bw.jpeg";
+import bw_mess from "../../assets/bw_mess.jpeg";
 
 const Styles = styled.div`
 	.jumbo {
-		background: url(${corey_standing_bw}) no-repeat fixed bottom;
+		background: url(${bw_mess}) no-repeat fixed bottom;
 		background-size: cover;
 		color: #ccc;
 		height: 30rem;

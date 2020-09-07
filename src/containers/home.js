@@ -4,9 +4,7 @@ import Pricing from "./pricing";
 import Jumbotron from "../components/jumbotron";
 import Calendar from "../components/calendar";
 import CoachCard from "../components/cards/coach_card";
-import Layout from "../components/layout";
 import { Container, Row } from "react-bootstrap";
-
 
 class Home extends React.Component {
 	state = {
@@ -28,21 +26,18 @@ class Home extends React.Component {
 		return (
 			<React.Fragment>
 				<Jumbotron />
-				<br />
-				<div>
-					<Layout>
-						<h3>Meet Our Coaches:</h3>
-					</Layout>
-					<Container>
+				<div style={{ backgroundColor: "#fcba03" }}>
+					<Container >
+                        <h3>Meet Our Coaches:</h3>
 						<Row xs={1} md={2} lg={3}>
 							{coaches}
 						</Row>
 					</Container>
 				</div>
-				<br />
 				<Workout />
-				<br />
+                <div style={{ backgroundColor: "#fcba03" }}>
 				<Calendar />
+                </div>
 				<Pricing />
 			</React.Fragment>
 		);
