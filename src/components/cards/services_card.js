@@ -1,11 +1,30 @@
-import React from 'react'
+import React from "react";
+import { Card, Col } from "react-bootstrap";
 
 const ServicesCard = (props) => (
-    <React.Fragment>
-        <h1>{props.service.price}</h1>
-        <h2>{props.service.name}</h2>
-        <p>{props.service.description}</p>
-    </React.Fragment>
-)
+	<Col>
+		<Card
+			border="warning"
+			bg="transparent"
+			style={{ width: "18rem", border: "0px solid rgba(0,0,0,.125)" }}
+		>
+			<Card.Body>
+				<Card.Title as="h1" style={{ color: "#fcba03" }}>
+					{props.service.price}
+				</Card.Title>
+				<Card.Subtitle
+					as="h3"
+					style={{ color: "#fcba03" }}
+					className="mb-3"
+				>
+					{props.service.name}
+				</Card.Subtitle>
+				<Card.Text as="h5" style={{ color: "#fcba03" }}>
+					{props.service.description}
+				</Card.Text>
+			</Card.Body>
+		</Card>
+	</Col>
+);
 
-export default ServicesCard
+export default ServicesCard;

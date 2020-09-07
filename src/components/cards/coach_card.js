@@ -1,12 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Card, Col } from "react-bootstrap";
+import styled from "styled-components";
+
+const Styles = styled.div`
+	
+`
+
 
 const CoachCard = (props) => (
 	<Col>
 		<nav>
 			<Link to={`/coach/${props.coach.id}`}>
-				<Card style={{ width: "18rem" }}>
+				<Card bg="transparent" style={{ width: "18rem", border: "0px solid rgba(0,0,0,.125)"}}>
 					<Card.Img
 						src={props.coach.picture}
 						alt="Foster Fitness Coach"
@@ -14,8 +20,9 @@ const CoachCard = (props) => (
 						height="300"
 					/>
 					<Card.Body>
-						<Card.Title>{props.coach.name}</Card.Title>
-						<Card.Text>{props.coach.bio}</Card.Text>
+						<Card.Title style={{ color: "#fcba03" }}>{props.coach.name}</Card.Title>
+						<Card.Text style={{ color: "#fcba03" }}>{props.coach.bio}</Card.Text>
+
 					</Card.Body>
 				</Card>
 			</Link>

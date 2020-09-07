@@ -80,7 +80,7 @@ class Signup extends React.Component {
 						<br />
 						<Form.Label>Email:</Form.Label>
 						<Form.Control
-							type="text"
+							type="email"
 							name="email"
 							placeholder="Enter Your Email"
 							value={this.state.email}

@@ -43,9 +43,7 @@ class Home extends React.Component {
 				<Workout />
 				<br />
 				<Calendar />
-				<br />
 				<Pricing />
-				<br />
 			</React.Fragment>
 		);
 	}

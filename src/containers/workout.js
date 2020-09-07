@@ -1,5 +1,5 @@
 import React from 'react'
-import WorkoutJumbotron from '../components/cards/workout_card'
+import WorkoutJumbotron from '../components/cards/workout_jumbotron'
 
 class Workout extends React.Component{
     state = { stateWorkout: [] }
