@@ -24,7 +24,7 @@ class  NavigationBar extends React.Component{
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="ml-auto">
                             <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
-                            <Nav.Item><Nav.Link href="/contact">Contact Us</Nav.Link></Nav.Item>
+                            <Nav.Item><Nav.Link href="/contact">Sign Up</Nav.Link></Nav.Item>
                             <Nav.Item><Nav.Link href="/schedule">Schedule</Nav.Link></Nav.Item>
                             <Nav.Item><Nav.Link href="/pricing">Prices</Nav.Link></Nav.Item>
                             <Nav.Item><Nav.Link href="/workout">Workout</Nav.Link></Nav.Item>
