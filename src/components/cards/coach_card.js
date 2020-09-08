@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Card, Col } from "react-bootstrap";
 
-
 const CoachCard = (props) => (
 	<Col>
 		<nav>
