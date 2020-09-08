@@ -15,7 +15,7 @@ const CoachCard = (props) => (
 					/>
 					<Card.Body style={{backgroundColor: "rgba(0,0,0,.5)"}}>
 						<Card.Title style={{ color: "#fcba03" }}>{props.coach.name}</Card.Title>
-						<Card.Text style={{ color: "#fcba03" }}>{props.coach.bio}</Card.Text>
+						<Card.Text style={{ color: "#fcba03", textDecoration: "none" }}>{props.coach.bio}</Card.Text>
 
 					</Card.Body>
 				</Card>
