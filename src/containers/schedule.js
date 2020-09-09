@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/containers.css";
+import "../App.css";
 import Calendar from "../components/calendar";
 import Events from "../components/events";
 import { Row, Container } from "react-bootstrap";
