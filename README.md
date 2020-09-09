@@ -6,7 +6,7 @@ ABOUT:
 
 - Stack used: React, Rails and Postgresql
 
-- Libraries used: React-Router and React-Bootstrap
+- Libraries used: React-Router, React-Bootstrap, and Sass to to get the hover color to white on the navbar (was looking into how to translate the ampersand in Sass to straight css but never got back to it.)
 
 - This is a template site for a small to medium size gym. It displays information about the gym including their schedule, workout, staff, location, events, and pricing. It also features admin controls to add, remove, and edit the coaches, events, workouts and services.
 

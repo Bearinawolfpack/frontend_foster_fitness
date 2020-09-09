@@ -1,12 +1,9 @@
 import React from 'react'
+import "./css/components.css"
 import { Nav, Navbar } from 'react-bootstrap'
 import styled from 'styled-components'
 
 const Styles = styled.div`
-    .navbar{
-        background-color: #fcba03;
-    }
-
     .nav-brand, .navbar-nav .nav-link {
         &:hover {
             color:white
@@ -18,7 +15,7 @@ class  NavigationBar extends React.Component{
     render(){
         return(
                 <Styles>
-                    <Navbar expand="lg">
+                    <Navbar expand="lg" className="gym-color">
                         <Navbar.Brand href="/">Foster Fitness</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
