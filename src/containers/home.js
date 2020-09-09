@@ -1,10 +1,11 @@
 import React from "react";
+import { Container, Row } from "react-bootstrap";
 import Workout from "./workout";
 import Pricing from "./pricing";
+import "./css/containers.css";
 import Jumbotron from "../components/jumbotron";
 import Calendar from "../components/calendar";
 import CoachCard from "../components/cards/coach_card";
-import { Container, Row } from "react-bootstrap";
 
 class Home extends React.Component {
 	state = {
@@ -24,22 +25,22 @@ class Home extends React.Component {
 			<CoachCard coach={coach} key={coach.id} />
 		));
 		return (
-			<React.Fragment>
+			<>
 				<Jumbotron />
-				<div style={{ backgroundColor: "#fcba03" }}>
-					<Container >
-                        <h3>Meet Our Coaches:</h3>
+				<div className="gym-color">
+					<Container>
+						<h3>Meet Our Coaches:</h3>
 						<Row xs={1} md={2} lg={3}>
 							{coaches}
 						</Row>
 					</Container>
 				</div>
 				<Workout />
-                <div style={{ backgroundColor: "#fcba03" }}>
-				<Calendar />
-                </div>
+				<div className="gym-color">
+					<Calendar />
+				</div>
 				<Pricing />
-			</React.Fragment>
+			</>
 		);
 	}
 }
