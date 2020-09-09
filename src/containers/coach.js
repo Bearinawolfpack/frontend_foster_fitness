@@ -18,7 +18,7 @@ class Coach extends React.Component {
 		));
 
 		return (
-			<div className="coach-bg">
+			<div className="bg-format standing_bw">
 				<Container >
 					<Row xs={1} md={2} lg={3}>
 						{coaches}

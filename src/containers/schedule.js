@@ -5,7 +5,7 @@ import Events from "../components/events";
 import { Row, Container } from "react-bootstrap";
 
 const Schedule = () => (
-	<div className="schedule-bg">
+	<div className="bg-format ring_bw2">
 		<Container>
 			<Row>
 				<Calendar />

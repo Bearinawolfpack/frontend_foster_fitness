@@ -1,19 +1,8 @@
-
 .gym-color {
-    background-color: #fcba03;
+	background-color: #fcba03;
 }
 
-.coach-bg {
-    background-image: url("../../assets/corey_standing_bw.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100%;
-}
-
-.schedule-bg {
-    background-image: url("../../assets/ring_pano_bw2.jpeg");
+.bg-format {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -21,3 +10,10 @@
 	height: 100%;
 }
 
+.ring_bw2 {
+	background-image: url("../../assets/ring_pano_bw2.jpeg");
+}
+
+.standing_bw {
+	background-image: url("../../assets/corey_standing_bw.jpeg");
+}
