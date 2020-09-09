@@ -1,9 +1,9 @@
 import React from "react";
-import "./css/components.css"
+import "../App.css"
 import { Jumbotron as Jumbo, Container } from "react-bootstrap";
 
 const Jumbotron = () => (
-	<Jumbo fluid className="home-jumbo">
+	<Jumbo fluid className="jumbo cf-ambience">
 		<div className="overlay"></div>
 		<Container id="center-jumbo-content">
 			<h1 className="gym-text">Foster Fitness</h1>

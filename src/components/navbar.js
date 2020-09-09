@@ -1,5 +1,5 @@
 import React from 'react'
-import "./css/components.css"
+import "../App.css"
 import { Nav, Navbar } from 'react-bootstrap'
 import styled from 'styled-components'
 
