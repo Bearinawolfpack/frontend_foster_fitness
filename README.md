@@ -83,3 +83,5 @@ FUTURE PATCHES:
 -   Change Coach Card Body hover effect to an overlay.
 
 -   Refactor navbar.js so doesn't use style components (making it consistent with how the rest of the project is styled)
+
+- Make it so that an image can be uploaded with the workout. Leave all fields optional, admin may want to upload a picture (from the web or locally) with the workout printed on it already.
