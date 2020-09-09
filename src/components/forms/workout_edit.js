@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../layout";
+import { Container } from "react-bootstrap"
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
@@ -45,7 +45,7 @@ class WorkoutEdit extends React.Component {
 
 	render() {
 		return (
-			<Layout>
+			<Container>
 				<Form onSubmit={this.submitHandler}>
 					<Form.Group role="form">
 						<Form.Label>Workout Edit Form:</Form.Label>
@@ -86,7 +86,7 @@ class WorkoutEdit extends React.Component {
 						</Button>
 					</Form.Group>
 				</Form>
-			</Layout>
+			</Container>
 		);
 	}
 }
