@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/layout";
+import { Container } from "react-bootstrap";
 import AdminUserCard from "../components/cards/admin_user_card";
 import WorkoutEdit from "../components/forms/workout_edit";
 import ServicesEdit from "../components/forms/services_edit";
@@ -20,7 +20,7 @@ class Admin extends React.Component {
 			<AdminUserCard user={user} key={user.id} />
 		));
 		return (
-			<Layout>
+			<Container>
 				<h1> Admin Dashboard </h1>
 				<WorkoutEdit />
 				<ServicesEdit />
@@ -28,7 +28,7 @@ class Admin extends React.Component {
 				<EventsEdit />
 				<h3>Leads:</h3>
 				{users}
-			</Layout>
+			</Container>
 		);
 	}
 }
