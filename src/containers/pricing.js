@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.css"
 import ServicesCard from "../components/cards/services_card";
 import { Row, Container } from "react-bootstrap";
 

@@ -6,10 +6,23 @@
 	height: 100%;
 }
 
+.top-spacing {
+  padding-top: 40px;
+}
+
+.img-adjust {
+  height: 40rem;
+  padding-bottom: 60px;
+}
+
 .standing_bw {
 	background-image: url("./assets/corey_standing_bw.jpeg");
 }
 
 .ring_bw2 {
 	background-image: url("./assets/ring_pano_bw2.jpeg");
+}
+
+.rings_bw {
+	background-image: url("./assets/bottom_rings_bw.jpeg");
 }
