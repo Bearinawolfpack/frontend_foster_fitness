@@ -24,12 +24,26 @@
 }
 
 .card-body {
+    padding-top: 50px;
 	background-color: rgba(0,0,0,.5);
 }
+
 
 .coach-card {
     width: 18rem; 
     border: 0px solid rgba(0,0,0,.125); 
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.bg-format {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+}
+
+.cf-ambience {
+    background-image: url("../../assets/cf_ambience.jpeg");
 }
