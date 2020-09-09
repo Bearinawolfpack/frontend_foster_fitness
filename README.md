@@ -45,7 +45,7 @@ RESOURCES:
 -   React CSS to remove Underline hover effect for anchors: https://html.developreference.com/article/11582391/How+remove+underline+in+link+in+react
 
 ==================================
-NOTES:
+PLACEHOLDERS:
 ==================================
 
 -   Sample Signup POST:
@@ -69,7 +69,7 @@ NOTES:
     -   Go Fast and Don't Let Go!
 
 =================================
-FUTURE PATCHES:
+TO DO:
 =================================
 
 -   Add Captcha to sign_up form
@@ -87,3 +87,5 @@ FUTURE PATCHES:
 -   Make it so that an image can be uploaded with the workout. Leave all fields optional, admin may want to upload a picture (from the web or locally) with the workout printed on it already.
 
 -   Make list of contacts show only the last 10. Have contact cards in a deck and give them a border. Have the archive of contacts prior to the last 10 be sortable.
+
+- Change events_card.js link color from blue to #fcba03

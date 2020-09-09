@@ -24,16 +24,15 @@
 }
 
 .card-body {
-    padding-top: 50px;
-	background-color: rgba(0,0,0,.5);
+	padding-top: 50px;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
-
 .coach-card {
-    width: 18rem; 
-    border: 0px solid rgba(0,0,0,.125); 
-    margin-top: 30px;
-    margin-bottom: 30px;
+	width: 18rem;
+	border: 0px solid rgba(0, 0, 0, 0.125);
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .bg-format {
@@ -45,5 +44,15 @@
 }
 
 .cf-ambience {
-    background-image: url("../../assets/cf_ambience.jpeg");
+	background-image: url("../../assets/cf_ambience.jpeg");
+}
+
+.service-card {
+	width: 18rem;
+	border: 0px solid rgba(0, 0, 0, 0.125);
+}
+
+.service-body {
+    background-color: rgba(0,0,0,.5); 
+    margin-top: 20px
 }
