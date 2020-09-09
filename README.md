@@ -2,15 +2,15 @@
 ABOUT:
 ==================================
 
-- Languages used: Ruby and Javascript
+-   Languages used: Ruby and Javascript
 
-- Stack used: React, Rails and Postgresql
+-   Stack used: React, Rails and Postgresql
 
-- Libraries used: React-Router, React-Bootstrap, and Sass to to get the hover color to white on the navbar (was looking into how to translate the ampersand in Sass to straight css but never got back to it.)
+-   Libraries used: React-Router, React-Bootstrap, and Sass to to get the hover color to white on the navbar (Refer to patch notes for plans to factor it out.)
 
-- This is a template site for a small to medium size gym. It displays information about the gym including their schedule, workout, staff, location, events, and pricing. It also features admin controls to add, remove, and edit the coaches, events, workouts and services.
+-   This is a template site for a small to medium size gym. It displays information about the gym including their schedule, workout, staff, location, events, and pricing. It also features admin controls to add, remove, and edit the coaches, events, workouts and services.
 
-- The primary purpose of this site is to be used as a sales funnel to get information from new members. When ever a user submits the contact form found on every page of the website, a timestamp is added to the admin panel and an email is sent to the admin with the information the user put in allowing the admin move to the next step in the sales process.
+-   The primary purpose of this site is to be used as a sales funnel to get information from new members. When ever a user submits the contact form found on every page of the website, a timestamp is added to the admin panel and an email is sent to the admin with the information the user put in allowing the admin move to the next step in the sales process.
 
 ==================================
 RESOURCES:
@@ -51,21 +51,21 @@ NOTES:
 -   Sample Signup POST:
 
     -   Corey Lynch
-   
+
     -   f00forcacawfee@gmail.com
-   
+
     -   1(234)567-8910
-   
+
     -   I really interested in trying out the gym but I'll only be able to make it on the weekend. Do you guys have a 'weekend warrior' type of membership? I saw the punchcard has 8 classes, I'm ok with that but i'd rather have a monthly that I could set and forget.
 
 -   Sample Workout PATCH:
-   
+
     -   12/25/20
-   
+
     -   Randy
-   
+
     -   75x Snatches (75/55)
-   
+
     -   Go Fast and Don't Let Go!
 
 =================================
@@ -81,3 +81,5 @@ FUTURE PATCHES:
 -   "See More" Hyperlink, after the third coach, which links to the 'about us' page.
 
 -   Change Coach Card Body hover effect to an overlay.
+
+-   Refactor navbar.js so doesn't use style components (making it consistent with how the rest of the project is styled)
