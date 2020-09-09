@@ -1,7 +1,7 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import Layout from "../layout";
 import emailjs from "emailjs-com";
 
 class Signup extends React.Component {
@@ -66,7 +66,7 @@ class Signup extends React.Component {
 
 	render() {
 		return (
-			<Layout>
+			<Container>
 				<Form onSubmit={this.sendEmail}>
 					<Form.Group role="form">
 						<Form.Label>Name:</Form.Label>
@@ -111,7 +111,7 @@ class Signup extends React.Component {
 						</Button>
 					</Form.Group>
 				</Form>
-			</Layout>
+			</Container>
 		);
 	}
 }
