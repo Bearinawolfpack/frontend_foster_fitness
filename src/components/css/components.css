@@ -2,11 +2,11 @@
 	background-color: #fcba03;
 }
 
-h1 {
+.gym-text {
 	color: #fcba03;
 }
 
-.jumbo {
+.home-jumbo {
 	background: url("../../assets/cf_ambience.jpeg") no-repeat fixed bottom;
 	background-size: cover;
 	color: #ccc;
