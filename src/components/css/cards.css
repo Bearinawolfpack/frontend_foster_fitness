@@ -35,6 +35,14 @@
 	margin-bottom: 30px;
 }
 
+.event-card {
+    width: 50rem; 
+    border: 0px solid rgba(0,0,0,.7); 
+    margin-top: 30px; 
+    margin-bottom: 30px; 
+    background-color: rgba(0,0,0,.5);
+}
+
 .bg-format {
 	background-position: center;
 	background-repeat: no-repeat;

@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 
 const EventCard = (props) => (
 	<Col>
-		<Card style={{ width: "50 rem", border: "0px solid rgba(0,0,0,.7)", marginTop: "30px", marginBottom: "30px", backgroundColor: "rgba(0,0,0,.5)" }}>
+		<Card className="event-card">
 			<Card.Title className="gym-text" >{props.event.name}</Card.Title>
 			<Card.Img
 				variant="top"
