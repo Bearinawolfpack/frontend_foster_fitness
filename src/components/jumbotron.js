@@ -3,7 +3,7 @@ import "../App.css"
 import { Jumbotron as Jumbo, Container } from "react-bootstrap";
 
 const Jumbotron = () => (
-	<Jumbo fluid className="jumbo cf-ambience">
+	<Jumbo fluid className="jumbo-format cf_ambience">
 		<div className="overlay"></div>
 		<Container id="center-jumbo-content">
 			<h1 className="gym-text">Foster Fitness</h1>
