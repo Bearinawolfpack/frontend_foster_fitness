@@ -1,18 +1,18 @@
 import React from "react";
+import { Container } from 'react-bootstrap'
 import Button from "react-bootstrap/Button";
-import Layout from "../layout"
 
 const AdminEventCard = (props) => {
 	const clickListener = (id, str) => {
 		props.clickHandler(id, str);
 	};
 	return (
-		<Layout>
+		<Container>
             <br/>
 			<img
 				src={props.event.picture}
 				alt="Foster Fitness Event"
-				width="250"
+				width="350"
 				height="250"
 			/>
             <br/>
@@ -32,7 +32,7 @@ const AdminEventCard = (props) => {
 			>
 				Edit Event
 			</Button>
-		</Layout>
+		</Container>
 	);
 };
 
