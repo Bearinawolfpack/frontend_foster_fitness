@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../layout";
+import { Container } from "react-bootstrap"
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import AdminCoachesCard from "../cards/admin_coaches_card";
@@ -87,7 +87,7 @@ class CoachesEdit extends React.Component {
 			/>
 		));
 		return (
-			<Layout>
+			<Container>
 				<h1>Current Coaches</h1>
 				{gymCoaches}
 				<Form onSubmit={this.submitHandler}>
@@ -122,7 +122,7 @@ class CoachesEdit extends React.Component {
 						</Button>
 					</Form.Group>
 				</Form>
-			</Layout>
+			</Container>
 		);
 	}
 }
