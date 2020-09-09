@@ -1,7 +1,9 @@
 import React from "react";
-import "../css/cards.css";
+import "../../App.css"
 import { Row, Col } from "react-bootstrap";
-{/*adding className to col makes div with class col which changes the formatting*/}
+{
+	/*adding className to col creates a div with className col which changes the formatting*/
+}
 
 class ShowCoach extends React.Component {
 	state = { stateCoach: {} };
