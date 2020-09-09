@@ -1,24 +1,35 @@
 .workout-jumbo {
-    background: url("../../assets/bw_mess.jpeg") no-repeat fixed bottom;
-    background-size: cover;
-    color: #ccc;
-    height: 30rem;
-    position: relative;
-    z-index: -2;
-    margin-bottom: 0px;
+	background: url("../../assets/bw_mess.jpeg") no-repeat fixed bottom;
+	background-size: cover;
+	color: #ccc;
+	height: 30rem;
+	position: relative;
+	z-index: -2;
+	margin-bottom: 0px;
 }
 
 .overlay {
-    background-color: #000;
-    opacity: 0.6;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
+	background-color: #000;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
 }
 
 .gym-text {
-    color: #fcba03;
+	color: #fcba03;
+}
+
+.card-body {
+	background-color: rgba(0,0,0,.5);
+}
+
+.coach-card {
+    width: 18rem; 
+    border: 0px solid rgba(0,0,0,.125); 
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
