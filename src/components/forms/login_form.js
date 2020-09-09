@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../layout";
+import { Container } from "react-bootstrap"
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Redirect } from "react-router-dom"
@@ -52,7 +52,7 @@ class LoginForm extends React.Component {
         }
 
 		return (
-			<Layout>
+			<Container>
 				<h1>Login</h1>
 				<Form onSubmit={this.login}>
 					<Form.Group>
@@ -77,7 +77,7 @@ class LoginForm extends React.Component {
 						Submit
 					</Button>
 				</Form>
-			</Layout>
+			</Container>
 		);
 	}
 }
