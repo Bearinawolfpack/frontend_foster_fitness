@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../layout";
-
+import { Container } from "react-bootstrap"
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import AdminServicesCard from "../cards/admin_services_card";
@@ -88,7 +88,7 @@ class ServicesEdit extends React.Component {
 			/>
 		));
 		return (
-			<Layout>
+			<Container>
 				<h1>Current Services</h1>
 				{gymServices}
 				<Form onSubmit={this.submitHandler}>
@@ -123,7 +123,7 @@ class ServicesEdit extends React.Component {
 						</Button>
 					</Form.Group>
 				</Form>
-			</Layout>
+			</Container>
 		);
 	}
 }
