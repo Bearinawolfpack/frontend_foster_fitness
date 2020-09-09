@@ -1,13 +1,13 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
-import Layout from "../layout"
+import { Container } from "react-bootstrap";
 
 const AdminCoachesCard = (props) => {
 	const clickListener = (id, str) => {
 		props.clickHandler(id, str);
 	};
 	return (
-		<Layout>
+		<Container>
             <br/>
 			<img
 				src={props.coach.picture}
@@ -32,7 +32,7 @@ const AdminCoachesCard = (props) => {
 			>
 				Edit Coach
 			</Button>
-		</Layout>
+		</Container>
 	);
 };
 
