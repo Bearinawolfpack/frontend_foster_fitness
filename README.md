@@ -89,3 +89,5 @@ TO DO:
 -   Make list of contacts show only the last 10. Have contact cards in a deck and give them a border. Have the archive of contacts prior to the last 10 be sortable.
 
 - Change events_card.js link color from blue to #fcba03
+
+- Find a different font to use for the site and use the different weights of that font where appropriate.

@@ -6,8 +6,42 @@
 	height: 100%;
 }
 
+.jumbo {
+  background: no-repeat; 
+  background-attachment: fixed; 
+  background-position: bottom;
+	background-size: cover;
+	color: #ccc;
+	position: relative;
+	z-index: -2;
+	margin-bottom: 0px;
+}
+
+#workout-jumbo {
+  height: 30rem;
+}
+
+#home-jumbo {
+  height: 200px;
+}
+
+.overlay {
+	background-color: #000;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+
 .gym-color {
 	background-color: #fcba03;
+}
+
+.gym-text {
+	color: #fcba03;
 }
 
 .top-spacing {
@@ -17,6 +51,37 @@
 .img-adjust {
   height: 40rem;
   padding-bottom: 60px;
+}
+
+.card-body {
+	padding-top: 50px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.coach-card {
+	width: 18rem;
+	border: 0px solid rgba(0, 0, 0, 0.125);
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.event-card {
+  width: 50rem; 
+  border: 0px solid rgba(0,0,0,.7); 
+  margin-top: 30px; 
+  margin-bottom: 30px; 
+  background-color: rgba(0,0,0,.5);
+}
+
+.service-card {
+	width: 18rem;
+	border: 0px solid rgba(0, 0, 0, 0.125);
+}
+
+.service-body {
+  background-color: rgba(0,0,0,.5); 
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .standing_bw {
@@ -29,4 +94,12 @@
 
 .rings_bw {
 	background-image: url("./assets/bottom_rings_bw.jpeg");
+}
+
+.cf-ambience {
+  background-image: url("./assets/cf_ambience.jpeg");
+}
+
+.bw_mess {
+  background-image: url("./assets/bw_mess.jpeg");
 }
