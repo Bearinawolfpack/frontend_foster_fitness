@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/containers.css"
+import "../App.css"
 import CoachCard from "../components/cards/coach_card";
 import { Row, Container } from "react-bootstrap";
 
