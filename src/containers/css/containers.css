@@ -4,10 +4,20 @@
 }
 
 .coach-bg {
-    background-image: url("../../assets/ring_pano_bw2.jpeg");
+    background-image: url("../../assets/corey_standing_bw.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
 }
+
+.schedule-bg {
+    background-image: url("../../assets/ring_pano_bw2.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+}
+
