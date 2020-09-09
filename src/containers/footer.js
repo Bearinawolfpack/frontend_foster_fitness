@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/containers.css";
+import "../App.css";
 import Map from "../components/map";
 import GymContact from "../components/gym_contact";
 import Signup from "../components/forms/signup_form";
