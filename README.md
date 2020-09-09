@@ -86,4 +86,4 @@ FUTURE PATCHES:
 
 -   Make it so that an image can be uploaded with the workout. Leave all fields optional, admin may want to upload a picture (from the web or locally) with the workout printed on it already.
 
--   Make list of contacts show only the last 10. Have each contact be in a card. Have the archive of contacts prior to the last 10 be sortable.
+-   Make list of contacts show only the last 10. Have contact cards in a deck and give them a border. Have the archive of contacts prior to the last 10 be sortable.
