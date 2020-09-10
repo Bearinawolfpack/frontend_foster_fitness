@@ -1,92 +1,87 @@
-==================================
-ABOUT:
-==================================
 
--   Languages used: Ruby and Javascript
+# ABOUT
 
--   Stack used: React, Rails and Postgresql
+- Languages used: Ruby and Javascript
 
--   Libraries used: React-Router, React-Bootstrap, and Sass to to get the hover color to white on the navbar (Refer to patch notes for plans to factor it out.)
+- Stack used: React, Rails and Postgresql
 
--   This is a template site for a small to medium size gym. It displays information about the gym including their schedule, workout, staff, location, events, and pricing. It also features admin controls to add, remove, and edit the coaches, events, workouts and services.
+- Libraries used: React-Router, React-Bootstrap, and Sass to to get the hover color to white on the navbar (Refer to patch notes for plans to factor it out.)
 
--   The primary purpose of this site is to be used as a sales funnel to get information from new members. When ever a user submits the contact form found on every page of the website, a timestamp is added to the admin panel and an email is sent to the admin with the information the user put in allowing the admin move to the next step in the sales process.
+- This is a template site for a small to medium size gym. It displays information about the gym including their schedule, workout, staff, location, events, and pricing. It also features admin controls to add, remove, and edit the coaches, events, workouts and services.
 
-==================================
-RESOURCES:
-==================================
+- The primary purpose of this site is to be used as a sales funnel to get information from new members. When ever a user submits the contact form found on every page of the website, a timestamp is added to the admin panel and an email is sent to the admin with the information the user put in allowing the admin move to the next step in the sales process.
 
--   Bootstrap and Styled Components https://www.youtube.com/watch?v=tOK9l5uP06U
+# RESOURCES
 
--   This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [Bootstrap and Styled Components](https://www.youtube.com/watch?v=tOK9l5uP06U)
 
--   Icons https://react-icons.github.io/
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
--   Google Calendar:
+- [React Icons](https://react-icons.github.io/)
 
-    -   How to Embed a Google Calendar into your website: https://support.google.com/calendar/answer/41207?hl=en
+- Google Calendar:
 
-    -   Embedded Google Calendar: https://calendar.google.com/calendar/embedhelper?src=k79dsr7vr90v9ip6rbr0l1b7v0%40group.calendar.google.com&ctz=America%2FNew_York
+  - How to [Embed a Google Calendar](https://support.google.com/calendar/answer/41207?hl=en)
 
-    -   NPM Package for React IFrames: https://www.npmjs.com/package/react-iframe
+  - [This Embedded Calendar](https://calendar.google.com/calendar/embedhelper?src=k79dsr7vr90v9ip6rbr0l1b7v0%40group.calendar.google.com&ctz=America%2FNew_York)
 
--   Link/ NavLink/ state: { isAdmin:true }: https://www.codementor.io/@packt/using-the-link-and-navlink-components-to-navigate-to-a-route-rieqipp42
+  - NPM Package for [React IFrames](https://www.npmjs.com/package/react-iframe)
 
--   Dynamic Routes: https://www.youtube.com/watch?v=Law7wfdg_ls (22:10)
+- [Link/NavLink/isAdmin](https://www.codementor.io/@packt/using-the-link-and-navlink-components-to-navigate-to-a-route-rieqipp42)
 
--   Remove a branch: https://www.educative.io/edpresso/how-to-delete-remote-branches-in-git
+- [Dynamic Routes](https://www.youtube.com/watch?v=Law7wfdg_ls) 22:10
 
--   Hiding API Keys: https://medium.com/better-programming/how-to-hide-your-api-keys-c2b952bc07e6
+- [Remove a branch](https://www.educative.io/edpresso/how-to-delete-remote-branches-in-git)
 
--   Redirect: https://www.youtube.com/watch?v=PHMzwisL_Ss (6:15)
+- [Hiding API Keys](https://medium.com/better-programming/how-to-hide-your-api-keys-c2b952bc07e6)
 
--   CSS Background: https://css-tricks.com/almanac/properties/b/background-attachment/
+- [Redirect](https://www.youtube.com/watch?v=PHMzwisL_Ss) 6:15
 
--   React CSS to remove Underline hover effect for anchors: https://html.developreference.com/article/11582391/How+remove+underline+in+link+in+react
+- [CSS Background](https://css-tricks.com/almanac/properties/b/background-attachment/)
 
-==================================
-PLACEHOLDERS:
-==================================
+- [Remove Hover Underline Effect](https://html.developreference.com/article/11582391/How+remove+underline+in+link+in+react)
 
--   Sample Signup POST:
+- [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 
-    -   Corey Lynch
+# PLACEHOLDERS
 
-    -   f00forcacawfee@gmail.com
+- Sample Signup POST:
 
-    -   1(234)567-8910
+  - Corey Lynch
 
-    -   I really interested in trying out the gym but I'll only be able to make it on the weekend. Do you guys have a 'weekend warrior' type of membership? I saw the punchcard has 8 classes, I'm ok with that but i'd rather have a monthly that I could set and forget.
+  - f00forcacawfee@gmail.com
 
--   Sample Workout PATCH:
+  - 1(234)567-8910
 
-    -   12/25/20
+  - I really interested in trying out the gym but I'll only be able to make it on the weekend. Do you guys have a 'weekend warrior' type of membership? I saw the punchcard has 8 classes, I'm ok with that but i'd rather have a monthly that I could set and forget.
 
-    -   Randy
+- Sample Workout PATCH:
 
-    -   75x Snatches (75/55)
+  - 12/25/20
 
-    -   Go Fast and Don't Let Go!
+  - Randy
 
-=================================
-TO DO:
-=================================
+  - 75x Snatches (75/55)
 
--   Add Captcha to sign_up form
+  - Go Fast and Don't Let Go!
 
--   Transparent overlays for background images (look more into react styled components).
+# TO DO
 
--   'Learn More' button on homepage jumbotron should scrollIntoView() the signup form in the footer.
+- Add Captcha to sign_up form
 
--   "See More" Hyperlink, after the third coach, which links to the 'about us' page.
+- Transparent overlays for background images (look more into react styled components).
 
--   Change Coach Card Body hover effect to an overlay.
+- 'Learn More' button on homepage jumbotron should scrollIntoView() the signup form in the footer.
 
--   Refactor navbar.js so doesn't use style components (making it consistent with how the rest of the project is styled)
+- "See More" Hyperlink, after the third coach, which links to the 'about us' page.
 
--   Make it so that an image can be uploaded with the workout. Leave all fields optional, admin may want to upload a picture (from the web or locally) with the workout printed on it already.
+- Change Coach Card Body hover effect to an overlay.
 
--   Make list of contacts show only the last 10. Have contact cards in a deck and give them a border. Have the archive of contacts prior to the last 10 be sortable.
+- Refactor navbar.js so doesn't use style components (making it consistent with how the rest of the project is styled)
+
+- Make it so that an image can be uploaded with the workout. Leave all fields optional, admin may want to upload a picture (from the web or locally) with the workout printed on it already.
+
+- Make list of contacts show only the last 10. Have contact cards in a deck and give them a border. Have the archive of contacts prior to the last 10 be sortable.
 
 - Change events_card.js link color from blue to #fcba03
 

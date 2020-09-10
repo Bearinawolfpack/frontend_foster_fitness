@@ -86,22 +86,22 @@
 	margin-bottom: 20px;
 }
 
-.standing_bw {
+.standing-bw {
 	background-image: url("./assets/corey_standing_bw.jpeg");
 }
 
-.ring_bw2 {
+.rings-bw2 {
 	background-image: url("./assets/ring_pano_bw2.jpeg");
 }
 
-.rings_bw {
+.rings-bw {
 	background-image: url("./assets/bottom_rings_bw.jpeg");
 }
 
-.cf_ambience {
+.cf-ambience {
 	background-image: url("./assets/cf_ambience.jpeg");
 }
 
-.bw_mess {
+.bw-mess {
 	background-image: url("./assets/bw_mess.jpeg");
 }

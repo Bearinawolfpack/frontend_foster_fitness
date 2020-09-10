@@ -3,7 +3,7 @@ import "../../App.css";
 import { Jumbotron as Jumbo, Container } from "react-bootstrap";
 
 const WorkoutJumbotron = (props) => (
-	<Jumbo fluid className="jumbo-format workout-jumbo bw_mess">
+	<Jumbo fluid className="jumbo-format workout-jumbo bw-mess">
 		<div className="overlay"></div>
 		<Container id="center-jumbo-content">
 			<h3>Today is {props.wod.date} and the Workout for today is:</h3>

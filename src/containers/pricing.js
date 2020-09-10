@@ -17,7 +17,7 @@ class Pricing extends React.Component {
 		));
 
 		return (
-			<div className="bg-format rings_bw img-adjust">
+			<div className="bg-format rings-bw img-adjust">
 				<Container>
 					<Row xs={1} md={2} lg={3}>
 						{gymServices}
