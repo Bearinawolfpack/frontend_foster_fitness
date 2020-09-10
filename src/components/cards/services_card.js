@@ -3,7 +3,7 @@ import "../../App.css"
 import { Card, Col } from "react-bootstrap";
 
 const ServicesCard = (props) => (
-	<Col className="top-spacing">
+	<Col >
 		<Card border="warning" bg="transparent" className="service-card">
 			<Card.Body className="service-body">
 				<Card.Title as="h1" className="gym-text">
