@@ -1,9 +1,12 @@
-
 # ABOUT
 
 - Languages used: Ruby and Javascript
 
-- Stack used: React, Rails and Postgresql
+- React Frontend
+
+- [Rails Backend](https://github.com/Bearinawolfpack/backend_foster_fitness#readme)
+
+- Postgresql(Database)
 
 - Libraries used: React-Router, React-Bootstrap, and Sass to to get the hover color to white on the navbar (Refer to patch notes for plans to factor it out.)
 
@@ -11,7 +14,7 @@
 
 - The primary purpose of this site is to be used as a sales funnel to get information from new members. When ever a user submits the contact form found on every page of the website, a timestamp is added to the admin panel and an email is sent to the admin with the information the user put in allowing the admin move to the next step in the sales process.
 
-# RESOURCES
+## RESOURCES
 
 - [Bootstrap and Styled Components](https://www.youtube.com/watch?v=tOK9l5uP06U)
 
@@ -43,7 +46,13 @@
 
 - [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 
-# PLACEHOLDERS
+- [Generators](https://medium.com/@kevinyckim33/rails-generators-cli-cheatsheet-711295e7a1ed)
+
+- [Controller Actions](https://www.rubydoc.info/docs/rails/4.1.7/ActionController/Base#:~:text=Action%20Controllers%20are%20the%20core,or%20redirects%20to%20another%20action)
+
+- [DB Date Format](https://stackoverflow.com/questions/5474164/rails-seeding-database-data-and-date-formats)
+
+## PLACEHOLDERS
 
 - Sample Signup POST:
 
@@ -65,7 +74,7 @@
 
   - Go Fast and Don't Let Go!
 
-# TO DO
+## TO DO
 
 - Add Captcha to sign_up form
 
