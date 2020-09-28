@@ -12,16 +12,6 @@ Geocode.setApiKey(process.env.REACT_APP_GAPI);
 
 class Map extends React.Component {
   state = {
-    address: '',
-    city: '',
-    area: '',
-    state: '',
-    zoom: 15,
-    height: 400,
-    mapPosition: {
-      lat: 0,
-      lng: 0,
-    },
     markerPosition: {
       lat: 40.6980959,
       lng: -73.322649,
