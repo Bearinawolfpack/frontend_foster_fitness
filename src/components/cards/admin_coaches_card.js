@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from 'react-bootstrap/Button';
 import { Container } from 'react-bootstrap';
 
@@ -37,3 +38,12 @@ const AdminCoachesCard = (props) => {
 };
 
 export default AdminCoachesCard;
+
+AdminCoachesCard.propTypes = {
+  coach: PropTypes.shape({
+    picture: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    bio: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+  }).isRequired,
+};
