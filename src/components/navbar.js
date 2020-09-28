@@ -12,7 +12,7 @@ const Styles = styled.div`
   }
 `;
 
-class NavigationBar extends React.Component {
+class NavigationBar extends React.PureComponent {
   render() {
     return (
       <Styles>
