@@ -7,6 +7,7 @@ const AdminCoachesCard = (props) => {
   const clickListener = (id, str) => {
     props.clickHandler(id, str);
   };
+
   return (
     <Container>
       <br />
@@ -40,6 +41,7 @@ const AdminCoachesCard = (props) => {
 export default AdminCoachesCard;
 
 AdminCoachesCard.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
   coach: PropTypes.shape({
     picture: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
