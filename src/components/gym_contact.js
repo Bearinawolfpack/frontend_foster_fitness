@@ -28,7 +28,7 @@ const gymContact = () => (
     <p>admin@fosterfitness.com</p>
 
     <p>Still have questions?</p>
-    <p>Fill out the form and we'll get back to your within 24hr.</p>
+    <p>Fill out the form and we&apos;ll get back to your within 24hr.</p>
   </Container>
 );
 
