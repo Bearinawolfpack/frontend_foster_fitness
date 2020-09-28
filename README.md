@@ -75,3 +75,5 @@
 - Find a different font to use for the site and use the different weights of that font where appropriate.
 
 - Host on Heroku.
+
+- Fix Event.js card formatting.
