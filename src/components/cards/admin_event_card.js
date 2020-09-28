@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
+import PropTypes from 'prop-types';
 
 const AdminEventCard = (props) => {
   const clickListener = (id, str) => {
@@ -37,3 +38,13 @@ const AdminEventCard = (props) => {
 };
 
 export default AdminEventCard;
+
+AdminEventCard.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
+  event: PropTypes.shape({
+    picture: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+  }).isRequired,
+};
