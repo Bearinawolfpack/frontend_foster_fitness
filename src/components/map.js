@@ -20,7 +20,7 @@ class Map extends React.Component {
 
   render() {
     const MapWithAMarker = withScriptjs(
-      withGoogleMap((props) => (
+      withGoogleMap(() => (
         <GoogleMap
           defaultZoom={20}
           defaultCenter={{
