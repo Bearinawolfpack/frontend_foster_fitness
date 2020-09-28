@@ -52,35 +52,13 @@
 
 - [DB Date Format](https://stackoverflow.com/questions/5474164/rails-seeding-database-data-and-date-formats)
 
-## PLACEHOLDERS
-
-- Sample Signup POST:
-
-  - Corey Lynch
-
-  - f00forcacawfee@gmail.com
-
-  - 1(234)567-8910
-
-  - I really interested in trying out the gym but I'll only be able to make it on the weekend. Do you guys have a 'weekend warrior' type of membership? I saw the punchcard has 8 classes, I'm ok with that but i'd rather have a monthly that I could set and forget.
-
-- Sample Workout PATCH:
-
-  - 12/25/20
-
-  - Randy
-
-  - 75x Snatches (75/55)
-
-  - Go Fast and Don't Let Go!
+- ESLint/Airbnb, Prettier[Config](https://github.com/paulolramos/eslint-prettier-airbnb-react)l
 
 ## TO DO
 
 - Add Captcha to sign_up form
 
 - Transparent overlays for background images (look more into react styled components).
-
-- 'Learn More' button on homepage jumbotron should scrollIntoView() the signup form in the footer.
 
 - "See More" Hyperlink, after the third coach, which links to the 'about us' page.
 
@@ -95,3 +73,5 @@
 - Change events_card.js link color from blue to #fcba03
 
 - Find a different font to use for the site and use the different weights of that font where appropriate.
+
+- Host on Heroku.
