@@ -36,6 +36,10 @@ class CoachesEdit extends React.Component {
     const newStateCoaches = this.state.stateCoaches.filter(
       (coaches) => coaches.id !== id,
     );
+    this.remainingCoaches(newStateCoaches, id);
+  };
+
+  remainingCoaches = (newStateCoaches, id) => {
     fetch(`${localhostCoaches}${String(id)}`, {
       method: 'DELETE',
     }).then(this.setState({ stateCoaches: newStateCoaches }));
@@ -45,6 +49,10 @@ class CoachesEdit extends React.Component {
     const targetCoach = this.state.stateCoaches.find(
       (coach) => coach.id === id,
     );
+    this.saveCoach(targetCoach);
+  };
+
+  saveCoach = (targetCoach) => {
     this.setState({
       name: targetCoach.name,
       bio: targetCoach.bio,
