@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import { Card, Col } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 
 const ServicesCard = (props) => (
   <Col>
@@ -21,3 +22,11 @@ const ServicesCard = (props) => (
 );
 
 export default ServicesCard;
+
+ServicesCard.propTypes = {
+  service: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    description: PropTypes.string.isRequired,
+  }).isRequired,
+};
