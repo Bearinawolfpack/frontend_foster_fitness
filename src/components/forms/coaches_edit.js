@@ -4,6 +4,8 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import AdminCoachesCard from '../cards/admin_coaches_card';
 
+const localhostCoaches = 'http://localhost:3000/coaches/';
+
 class CoachesEdit extends React.Component {
   state = {
     name: '',
@@ -13,7 +15,7 @@ class CoachesEdit extends React.Component {
   };
 
   componentDidMount() {
-    fetch('http://localhost:3000/coaches')
+    fetch(`${localhostCoaches}`)
       .then((resp) => resp.json())
       .then((coaches) => this.setState({ stateCoaches: coaches }));
   }
@@ -31,27 +33,29 @@ class CoachesEdit extends React.Component {
   };
 
   deleteHandler = (id) => {
-    let newStateCoaches = this.state.stateCoaches.filter(
-      (coach) => coach.id !== id,
+    const newStateCoaches = this.state.stateCoaches.filter(
+      (coaches) => coaches.id !== id,
     );
-    fetch('http://localhost:3000/coaches/' + String(id), {
+    fetch(`${localhostCoaches}${String(id)}`, {
       method: 'DELETE',
     }).then(this.setState({ stateCoaches: newStateCoaches }));
   };
 
   editHandler = (id) => {
-    let coach = this.state.stateCoaches.find((coach) => coach.id === id);
+    const targetCoach = this.state.stateCoaches.find(
+      (coach) => coach.id === id,
+    );
     this.setState({
-      name: coach.name,
-      bio: coach.bio,
-      picture: coach.picture,
+      name: targetCoach.name,
+      bio: targetCoach.bio,
+      picture: targetCoach.picture,
     });
   };
 
   submitHandler = (event) => {
     event.preventDefault();
 
-    fetch('http://localhost:3000/coaches', {
+    fetch(`${localhostCoaches}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -77,7 +81,7 @@ class CoachesEdit extends React.Component {
   };
 
   render() {
-    let gymCoaches = this.state.stateCoaches.map((coach) => (
+    const gymCoaches = this.state.stateCoaches.map((coach) => (
       <AdminCoachesCard
         coach={coach}
         key={coach.id}
