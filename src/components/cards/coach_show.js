@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import { Row, Col } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 
 class ShowCoach extends React.Component {
   state = { stateCoach: {} };
@@ -45,3 +46,11 @@ class ShowCoach extends React.Component {
 }
 
 export default ShowCoach;
+
+ShowCoach.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    }).isRequired,
+  }).isRequired,
+};
