@@ -58,12 +58,12 @@ class Signup extends React.Component {
       )
       .then(
         (result) => {
-          console.log(result.text); // Email sent successfully.
+          console.log(result.text); // Display a bootstrap alert variant success Email sent successfully.
           this.addUser();
           this.resetSignup();
         },
         (error) => {
-          console.log(error.text); // Something went wrong. Please refresh and try again.
+          console.log(error.text); // Display a bootstrap alert variant danger Email sent successfully.Something went wrong. Please refresh and try again.
         },
       );
   };
