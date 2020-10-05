@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { Row, Container } from 'react-bootstrap';
+
 import CoachCard from '../components/cards/coach_card';
 
 const localhostCoaches = 'http://localhost:3000/coaches';
