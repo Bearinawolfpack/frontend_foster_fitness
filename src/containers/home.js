@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { Container, Row } from 'react-bootstrap';
+
 import Workout from './workout';
 import Pricing from './pricing';
 import Jumbotron from '../components/jumbotron';
