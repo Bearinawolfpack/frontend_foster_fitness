@@ -7,7 +7,7 @@ import Jumbotron from '../components/jumbotron';
 import Calendar from '../components/calendar';
 import CoachCard from '../components/cards/coach_card';
 
-const localhostCoaches = 'http://localhost:3000/coaches'
+const localhostCoaches = 'http://localhost:3000/coaches';
 
 class Home extends React.Component {
   state = {
