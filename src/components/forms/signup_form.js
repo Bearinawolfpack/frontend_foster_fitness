@@ -57,13 +57,14 @@ class Signup extends React.Component {
         `${process.env.REACT_APP_JSE}`,
       )
       .then(
+        // need to add form validations
         (result) => {
-          console.log(result.text); // Display a bootstrap alert variant success Email sent successfully.
+          // Display a bootstrap alert variant success Email sent successfully.
           this.addUser();
           this.resetSignup();
         },
         (error) => {
-          console.log(error.text); // Display a bootstrap alert variant danger Email sent successfully.Something went wrong. Please refresh and try again.
+          // Display a bootstrap alert variant danger Email sent successfully.Something went wrong. Please refresh and try again.
         },
       );
   };

@@ -1,11 +1,14 @@
 import React from 'react';
+
 import EventCard from './cards/events_card';
+
+const localhostEvents = 'http://localhost:3000/events'
 
 class Events extends React.Component {
   state = { stateEvents: [] };
 
   componentDidMount() {
-    fetch('http://localhost:3000/events')
+    fetch(`${localhostEvents}`)
       .then((resp) => resp.json())
       .then((events) => this.setState({ stateEvents: events }));
   }
