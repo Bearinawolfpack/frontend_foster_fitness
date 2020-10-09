@@ -21,7 +21,7 @@ WorkoutJumbotron.propTypes = {
   wod: PropTypes.shape({
     name: PropTypes.string.isRequired,
     wod: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired,
+    date: PropTypes.string,
     description: PropTypes.string.isRequired,
   }).isRequired,
 };
