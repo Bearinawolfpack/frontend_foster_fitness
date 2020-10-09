@@ -26,7 +26,7 @@ export default ServicesCard;
 ServicesCard.propTypes = {
   service: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
+    price: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
   }).isRequired,
 };
