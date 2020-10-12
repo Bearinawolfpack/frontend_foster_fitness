@@ -14,6 +14,7 @@ class Signup extends React.Component {
     phone: '',
     message: '',
     emailSent: false,
+    alert: false,
   };
 
   changeHandler = (event) => {
@@ -59,17 +60,34 @@ class Signup extends React.Component {
       .then(
         // need to add form validations
         (result) => {
-          // Display a bootstrap alert variant success Email sent successfully.
+          if (result) {
+            this.setState({ emailSent: true });
+          }
           this.addUser();
           this.resetSignup();
         },
         (error) => {
-          // Display a bootstrap alert variant danger Email sent successfully.Something went wrong. Please refresh and try again.
+          if (error) {
+            this.setState({ alert: true });
+          }
         },
       );
   };
 
   render() {
+    const { emailSent } = this.state;
+    const { alert } = this.state;
+    let sentEmail;
+    if (emailSent) {
+      sentEmail = <Alert variant="success">Email successfully sent</Alert>;
+    } else if (alert) {
+      sentEmail = (
+        <Alert variant="danger">
+          Oops, something went wrong. Please try again.
+        </Alert>
+      );
+    }
+
     return (
       <Container>
         <Form onSubmit={this.sendEmail}>
@@ -110,6 +128,7 @@ class Signup extends React.Component {
               value={this.state.message}
               onChange={this.changeHandler}
             />
+            {sentEmail}
             <br />
             <Button variant="primary" type="submit">
               Submit
