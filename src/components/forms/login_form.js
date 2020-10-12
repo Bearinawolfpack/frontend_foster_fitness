@@ -49,12 +49,12 @@ class LoginForm extends React.Component {
   render() {
     const { loggedIn } = this.state;
     const { alert } = this.state;
-    let beef;
+    let login;
     if (loggedIn) {
       return <Redirect to="/admin" />;
     }
     if (alert) {
-      beef = <Alert variant="danger">Please Try Again</Alert>;
+      login = <Alert variant="danger">Please Try Again</Alert>;
     }
 
     return (
@@ -83,7 +83,7 @@ class LoginForm extends React.Component {
             Submit
           </Button>
         </Form>
-        {beef}
+        {login}
       </Container>
     );
   }
