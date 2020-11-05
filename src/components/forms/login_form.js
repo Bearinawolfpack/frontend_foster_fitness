@@ -47,8 +47,7 @@ class LoginForm extends React.Component {
   };
 
   render() {
-    const { loggedIn } = this.state;
-    const { alert } = this.state;
+    const { loggedIn, alert } = this.state;
     let login;
     if (loggedIn) {
       return <Redirect to="/admin" />;
